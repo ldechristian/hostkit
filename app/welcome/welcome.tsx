@@ -32,6 +32,14 @@ export function Welcome({ message }: { message: string }) {
 
 				<a href="https://spinize.hostkit.uk" className="font-semibold text-xl underline">Web version</a>
 			</section>
+
+			<section className="my-8">
+				<p className="text-lg">
+					Please use the email below for any suggestion you might have, or if you just want to talk with me.
+				</p>
+
+				<a href="mailto:suggestion@hostkit.uk" className="font-semibold text-xl underline">suggestion [at] hostkit.uk</a>
+			</section>
 		</main>
 	);
 	}
