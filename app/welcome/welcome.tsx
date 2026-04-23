@@ -3,49 +3,40 @@ import logoLight from "./logo-light.svg";
 
 export function Welcome({ message }: { message: string }) {
 	return (
-		<main className="flex items-center justify-center pt-16 pb-4">
-			<div className="flex-1 flex flex-col items-center gap-16 min-h-0">
-				<header className="flex flex-col items-center gap-9">
-					<div className="w-[500px] max-w-[100vw] p-4">
-						<img
-							src={logoLight}
-							alt="React Router"
-							className="block w-full dark:hidden"
-						/>
-						<img
-							src={logoDark}
-							alt="React Router"
-							className="hidden w-full dark:block"
-						/>
-					</div>
-				</header>
-				<div className="max-w-[300px] w-full space-y-6 px-4">
-					<nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
-						<p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
-							What&apos;s next?
-						</p>
-						<ul>
-							{resources.map(({ href, text, icon }) => (
-								<li key={href}>
-									<a
-										className="group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500"
-										href={href}
-										target="_blank"
-										rel="noreferrer"
-									>
-										{icon}
-										{text}
-									</a>
-								</li>
-							))}
-							<li className="self-stretch p-3 leading-normal">{message}</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+		<main className="mx-auto max-w-4xl mx-16 my-8">
+			<section className="my-8">
+				<h1 className="font-bold text-4xl">
+					Host Kit
+				</h1>
+				<p className="font-semibold text-2xl">
+					This free Kit is for you to be used and supported by to make self hosting and communications collaborative instead of corporative.
+				</p>
+			</section>
+
+			<section className="my-8">
+				<p className="text-lg">
+					All the resources below are Open Source and wait for you to collaborate and improve them to make the user experience the best possible.
+				</p>
+				<p className="text-lg">
+					Ease of installation : all of the projects must be easy to install and cross-platform by design. The most native possible or compatible at least with all platforms (x86, ARM and more).
+				</p>
+				<p className="text-lg">
+					Customisation : all the projects must be fully customisable, only their functionality is required, ease of use and customisation are key to user experience and satisfaction.
+				</p>
+			</section>
+
+			<section className="my-8">
+				<p className="text-lg">
+					Spinize : a free and Open Source Subsonic Client, fully customisable and available on ALL devices (Work In Progress).
+				</p>
+
+				<a href="https://spinize.hostkit.uk" className="font-semibold text-xl underline">Web version</a>
+			</section>
 		</main>
 	);
-}
+	}
+'<a href="https://spinize.hostkit.uk/themes">See themes for Spinize</a>'
+'<a href="https://spinize.hostkit.uk/submit-theme">Add your custom theme to Spinize</a>'
 
 const resources = [
 	{
