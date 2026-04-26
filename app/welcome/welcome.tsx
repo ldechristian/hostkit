@@ -31,6 +31,7 @@ export function Welcome({ message }: { message: string }) {
 				</p>
 
 				<a href="https://spinize.hostkit.uk" className="font-semibold text-xl underline">Web version</a>
+				<a href="https://github.com/ldechristian/spinize" className="font-semibold text-xl underline">Github page</a>
 			</section>
 
 			<section className="my-8">
