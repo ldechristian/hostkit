@@ -30,8 +30,10 @@ export function Welcome({ message }: { message: string }) {
 					Spinize : a free and Open Source Subsonic Client, fully customisable and available on ALL devices (Work In Progress).
 				</p>
 
-				<a href="https://spinize.hostkit.uk" className="font-semibold text-xl underline">Web version</a>
-				<a href="https://github.com/ldechristian/spinize" className="font-semibold text-xl underline">Github page</a>
+				<div className="flex flex-row gap-4 items-center">
+					<a href="https://spinize.hostkit.uk" className="font-semibold text-xl underline">Web version</a>
+					<a href="https://github.com/ldechristian/spinize" className="font-semibold text-xl underline">Github page</a>
+				</div>
 			</section>
 
 			<section className="my-8">
