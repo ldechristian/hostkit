@@ -38,6 +38,17 @@ export function Welcome({ message }: { message: string }) {
 
 			<section className="my-8">
 				<p className="text-lg">
+					AAnim Boards : Create and manage your stories and characters easily (Work In Progress).
+				</p>
+
+				<div className="flex flex-row gap-4 items-center">
+					<a href="https://aanimboards.hostkit.uk" className="font-semibold text-xl underline">Web version</a>
+					<a href="https://github.com/ldechristian/aanimboards" className="font-semibold text-xl underline">Github page</a>
+				</div>
+			</section>
+
+			<section className="my-8">
+				<p className="text-lg">
 					Please use the email below for any suggestion you might have, or if you just want to talk with me.
 				</p>
 
